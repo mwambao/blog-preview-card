@@ -38,7 +38,7 @@
     margin: auto;
     border-radius: 4%;
     border: 2px solid var(--Gray-950);
-    gap: 
+    margin-top: 60px;
     
 }
 
@@ -90,4 +90,8 @@
 }
 .greg-description{
     grid-area: grg-description;
+}
+
+.attribution {
+    margin-top: 20px;
 }
