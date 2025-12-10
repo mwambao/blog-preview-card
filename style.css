@@ -1,4 +1,90 @@
-    .attribution { font-size: 11px; text-align: center; }
+:root {
+
+    --Yellow: hsl(47, 88%, 63%); 
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+/*
+
+* {
+    border: 1px solid red;
+}  */
+
+.attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
+ body {
+    background-color: var(--Yellow);
+ }   
+
+
+.container {
+    background-color: var(--White);
+    display: grid;
+    width: 375px;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'illustration-image'
+    'learning'
+    'published'
+    'html-css'
+    'description'
+    'greg';
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    border-radius: 4%;
+    border: 2px solid var(--Gray-950);
     
+}
+
+.illustration-image {
+    grid-area: illustration-image;
+    margin: 16px;
+    border-radius: 4%;
+    padding-top: 10px;
+    border-top-left-radius: 5%;
+
+}
+
+.learning {
+    grid-area: learning;
+    margin-left: 16px;
+    width: 40%;
+    background-color: var(--Yellow);
+    border-radius: 4%;
+}
+
+.published {
+    grid-area: published;
+    margin-left: 16px;
+}
+
+.html-css {
+    grid-area: html-css;
+    margin-left: 16px;
+}
+
+.description {
+    grid-area: description;
+    margin-left: 16px;
+}
+
+.greg {
+    grid-area: greg;
+    margin-left: 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'greg-image greg-description';
+}
+.greg-image {
+    grid-area: greg-image;
+}
+.greg-description{
+    grid-area: grg-description;
+}
