@@ -78,6 +78,16 @@
     
 }
 
+.html-css:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.html-css:active {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
 .description {
     grid-area: description;
     margin-left: 16px;
@@ -105,4 +115,22 @@
 
 .attribution {
     margin-top: 20px;
+}
+
+@media screen and (width < 1440px) {
+    
+ 
+    .container {
+    width: 300px;
+    }
+
+    .illustration-image {
+        width: 280px;
+
+    }
+    
+    .learning {
+    width: 25%;
+    }
+
 }
